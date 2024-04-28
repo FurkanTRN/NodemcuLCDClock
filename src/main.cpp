@@ -8,14 +8,14 @@
 #define dhtPin 2              // define dht connected pin
 #define dhtType DHTesp::DHT11 // Define dht sensor type
 
-const char *ssid = "TRN-2.4G";        // Wifi SSID
-const char *password = "TRN.QWED303"; // Wifi Password
+const char *ssid = "";        // Wifi SSID
+const char *password = ""; // Wifi Password
 
 const long utcOffsetInSeconds = 10800; // Set your timezone 1 hour = 3600 second
 
 bool executed = false;
 bool Fahrenheit = false;                        // If you want change temperature unit to Fahrenheit set true
-const char *ntpServerUrl = "2.tr.pool.ntp.org"; // Set npt server url
+const char *ntpServerUrl = "pool.ntp.org"; // Set npt server url
                                                 // https://www.ntppool.org/en/
 
 DHTesp dht;
